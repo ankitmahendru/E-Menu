@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/menubg"
+    android:layout_height="match_parent"
+    tools:context=".ItemAdd"
+    android:alpha="0.55">
+
+    <EditText
+        android:id="@+id/itemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:fontFamily="@font/akronim"
+        android:hint="Enter Item Name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:fontFamily="@font/akronim"
+        android:hint="Enter Price"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+    <EditText
+        android:id="@+id/itemCode"
+        android:layout_width="312dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:fontFamily="@font/akronim"
+        android:hint="Enter Item Code"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/itemName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/saveItem_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="86dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginStart="133dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/akronim"
+        android:text="Save ITEM"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:spinnerMode="dialog"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/cuisine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <Spinner
+        android:id="@+id/cuisine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toTopOf="@+id/category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type" />
+
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toTopOf="@+id/saveItem_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuisine" />
+
+</android.support.constraint.ConstraintLayout>

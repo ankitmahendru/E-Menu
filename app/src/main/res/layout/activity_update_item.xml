@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/menubg"
+
+    tools:context=".UpdateItem">
+
+    <EditText
+        android:id="@+id/search_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="50dp"
+        android:hint="Enter Item Id"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/item_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="360dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginStart="72dp"
+        android:ems="10"
+        android:hint="Enter Item Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/background_light"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_id" />
+
+    <EditText
+        android:id="@+id/item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="297dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Enter Item Price"
+        android:inputType="number"
+        android:textColorHint="@android:color/background_light"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginStart="136dp"
+        android:text="UPDATE"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/type"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="182dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="25dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/update_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_price" />
+
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="133dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginStart="72dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/update_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/cuisine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginStart="72dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/update_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

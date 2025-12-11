@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/menubg"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".UserHome">
+
+
+    <Button
+        android:id="@+id/menu_btn"
+        android:layout_width="216dp"
+        android:layout_height="114dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/akronim"
+        android:text="Menu"
+        android:textColor="@android:color/background_light"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/new_btn"
+        android:layout_width="222dp"
+        android:layout_height="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/akronim"
+        android:text="News"
+        android:textColor="@android:color/background_light"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/wthr_btn"
+        android:layout_width="225dp"
+        android:layout_height="105dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="135dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/akronim"
+        android:text="Weather"
+        android:textColor="@android:color/background_light"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+</RelativeLayout>

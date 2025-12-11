@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/menubg"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".UserSelection">
+
+    <Button
+        android:id="@+id/admin_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/akronim"
+        android:text="ADMIN"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/user_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/user_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/akronim"
+        android:text="USER "
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_btn" />
+
+    <EditText
+        android:id="@+id/getUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="url here"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/getUrl"
+        app:layout_constraintTop_toBottomOf="@+id/user_btn" />
+</android.support.constraint.ConstraintLayout>
