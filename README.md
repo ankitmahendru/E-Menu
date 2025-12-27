@@ -35,7 +35,7 @@ This is a **Full-stack Digital Menu System** designed to bridge the gap between 
 
 I've crawled through the guts of this repo. Here’s the architectural breakdown:
 
-```bash
+```
 E-Menu/
 ├── client/              # The React/Frontend logic (where the pretty stuff lives)
 │   ├── src/
@@ -49,6 +49,8 @@ E-Menu/
 ├── config/              # Environment and DB connection settings
 ├── .env.example         # A hint for your secrets
 └── package.json         # The holy grail of dependencies
+
+```
 
 🛠 Tech Stack
 | Layer | Technology | Why? |
